@@ -39,13 +39,13 @@ public class GestionePrenotazioniApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // inserisci un edificio
         Edificio edificio1 = new Edificio();
-        edificio1.setNome("Edificio A");
-        edificio1.setIndirizzo("Via Roma 1");
+        edificio1.setNome("Jolly Hotel ");
+        edificio1.setIndirizzo("Via Lanza 1");
         edificio1.setCitta("Milano");
         edificio1 = edificioService.salvaEdificio(edificio1);
 
         Edificio edificio2 = new Edificio();
-        edificio2.setNome("Edificio B");
+        edificio2.setNome("Ceasar");
         edificio2.setIndirizzo("Corso Italia 20");
         edificio2.setCitta("Roma");
         edificio2 = edificioService.salvaEdificio(edificio2);
@@ -97,15 +97,15 @@ public class GestionePrenotazioniApplication implements CommandLineRunner {
 
         //inserisci utenti
         Utente utente1 = new Utente();
-        utente1.setUsername("mrossi");
-        utente1.setNomeCompleto("Mario Rossi");
-        utente1.setEmail("mario.rossi@example.com");
+        utente1.setUsername("Abaglio");
+        utente1.setNomeCompleto("Aldo Baglio");
+        utente1.setEmail("aldo.baglio@gmail.com");
         utente1 = utenteService.salvaUtente(utente1);
 
         Utente utente2 = new Utente();
-        utente2.setUsername("lbianchi");
-        utente2.setNomeCompleto("Laura Bianchi");
-        utente2.setEmail("laura.bianchi@example.com");
+        utente2.setUsername("Gstorti");
+        utente2.setNomeCompleto("Giovanni Storti");
+        utente2.setEmail("giovanni.storti@gmail.com");
         utente2 = utenteService.salvaUtente(utente2);
 
         // visualizza tutti gli utenti
