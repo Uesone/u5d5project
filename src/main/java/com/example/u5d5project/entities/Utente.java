@@ -47,7 +47,8 @@ public class Utente {
     public void setPrenotazioni(List<Prenotazione> prenotazioni) {
         this.prenotazioni = prenotazioni;
     }
-
+    public Utente() {
+    }
     public Utente(String username, String nomeCompleto, String email, List<Prenotazione> prenotazioni) {
         this.username = username;
         this.nomeCompleto = nomeCompleto;

@@ -2,7 +2,7 @@ package com.example.u5d5project.entities;
 
 import jakarta.persistence.*;
 
-import javax.lang.model.element.Name;
+
 import java.time.LocalDate;
 
 @Entity
@@ -53,6 +53,8 @@ public class Prenotazione {
     public void setPostazione(Postazione postazione) {
         this.postazione = postazione;
     }
+    public Prenotazione() {
+    }
 
     public Prenotazione(Long id, LocalDate dataPrenotazione, Utente utente, Postazione postazione) {
         this.id = id;
@@ -60,4 +62,5 @@ public class Prenotazione {
         this.utente = utente;
         this.postazione = postazione;
     }
+
 }

@@ -77,6 +77,8 @@ public class Postazione {
     public void setPrenotazioni(List<Prenotazione> prenotazioni) {
         this.prenotazioni = prenotazioni;
     }
+    public Postazione() {
+    }
 
     public Postazione(Long id, String codice, String descrizione, String tipo, int numeroMassimoOccupanti, Edificio edificio, List<Prenotazione> prenotazioni) {
         this.id = id;
